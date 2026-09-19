@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=Inter+Tight:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap');
+:root{--bg:#ff9600;--fg:#1A1410;--fg-soft:#5E4A38;--accent:#E5651A;--accent-deep:#8B3E1E;--line:#1A1410;--surface:rgba(255,170,51,0.55);--surface-line:rgba(255,200,100,0.3)}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:"Inter Tight",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--fg);text-decoration:none;border-bottom:1px solid rgba(26,20,16,.28)}
+a:hover{border-bottom-color:var(--accent)}
+.wrap{max-width:920px;margin:0 auto;padding:clamp(28px,4vw,56px) clamp(16px,3vw,40px) clamp(48px,6vw,88px)}
+.top{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-bottom:20px;border-bottom:1px solid rgba(26,20,16,.18);margin-bottom:clamp(32px,4vw,56px)}
+.brand{font-family:"Cormorant Garamond",Georgia,serif;font-size:26px;font-weight:400;letter-spacing:.02em;border:none}
+.brand span{font-style:italic;color:var(--accent);font-size:.72em;margin-left:.12em}
+.back{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;border:none}
+.kicker{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--fg);margin-bottom:12px;display:inline-flex;align-items:center;gap:10px}
+.kicker::before{content:"";width:22px;height:1px;background:var(--accent-deep)}
+h1{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(30px,3.6vw,56px);line-height:1.1;font-weight:300;letter-spacing:-.015em;margin:0 0 8px}
+.updated{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--fg);margin-bottom:clamp(28px,3.5vw,44px)}
+h2{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(22px,2.2vw,30px);line-height:1.15;font-weight:400;letter-spacing:-.01em;margin:clamp(30px,3.4vw,44px) 0 12px;padding-top:clamp(22px,2.6vw,32px);border-top:1px solid rgba(26,20,16,.18)}
+h2:first-of-type{border-top:none;padding-top:0}
+p,li{font-size:17px;line-height:1.7;text-align:justify;hyphens:auto;text-wrap:pretty}
+p{margin:0 0 14px}
+ul{margin:0 0 14px;padding-left:20px}
+li{margin-bottom:8px}
+dl{margin:0 0 14px;display:grid;grid-template-columns:minmax(150px,auto) 1fr;gap:8px 24px}
+dt{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--fg);padding-top:4px}
+dd{margin:0;font-size:17px;line-height:1.6}
+.todo{background:var(--surface);border:1px solid var(--surface-line);padding:2px 7px;font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:1px}
+.note{background:var(--surface);border:1px solid var(--surface-line);padding:18px 22px;margin:clamp(28px,3.4vw,40px) 0 0}
+.note p{margin:0;font-size:15px;text-align:left}
+.foot{margin-top:clamp(40px,5vw,72px);padding-top:20px;border-top:1px solid rgba(26,20,16,.18);display:flex;flex-wrap:wrap;gap:12px 24px;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase}
+.foot a{border:none;color:var(--fg)}
+.foot a:hover{color:var(--fg)}
+@media print{body{background:#fff}.top .back,.foot{display:none}}
