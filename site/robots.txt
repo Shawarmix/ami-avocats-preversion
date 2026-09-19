@@ -1,4 +1,5 @@
-User-agent: *
-Allow: /
+# Preversion privee du site AMI Avocats - ne doit pas etre indexee.
+# A retablir avant la mise en ligne publique sur le domaine definitif.
 
-Sitemap: https://www.ami-avocats.fr/sitemap.xml
+User-agent: *
+Disallow: /
